@@ -29,11 +29,22 @@
       font-size: 20px;
       margin-bottom: 10px;
     }
-    iframe {
+    .vote-buttons {
       margin-top: 40px;
-      border-radius: 8px;
-      overflow: hidden;
+    }
+    button {
+      background-color: #ffd700;
+      color: #1e3c72;
       border: none;
+      padding: 15px 30px;
+      margin-right: 20px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e6c200;
     }
   </style>
 </head>
@@ -49,6 +60,9 @@
     <li>HIAMOLI COMEBACK PLEASE</li>
   </ul>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3vJLCrw5HF62djAeu0TLKCTYqNECUOMNl3cVQbKNzGQLWRg/viewform?embedded=true" width="100%" height="600">Loading…</iframe>
+  <div class="vote-buttons">
+    <button onclick="alert('✅ You voted YES')">✅ Yes</button>
+    <button onclick="alert('❌ You voted NO')">❌ No</button>
+  </div>
 </body>
 </html>
